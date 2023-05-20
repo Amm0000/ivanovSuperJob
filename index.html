@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+<head>
+    <title>Тестирование школьной тревожности Филлипса</title>
+</head>
+<body>
+    <h1>Тестирование школьной тревожности Филлипса</h1>
+    <div id="start">
+        <p>Ребята, сейчас Вам будет предложен опросник, который состоит из 58 вопросов о том, как Вы себя чувствуете в школе.
+            <br> Старайтесь отвечать искренне и правдиво, здесь нет верных или неверных, хороших или плохих ответов. Над вопросами долго не задумывайтесь.
+            <br> Отвечая на вопрос, записывайте его номер и ответ «ДА», если Вы согласны с ним, или «НЕТ», если не согласны».
+            </p>
+        <button onclick="startTest()">Начать</button>
+    </div>
+
+    <div id="questions">
+        <div id="question1">
+            <h2>Вопрос:</h2>
+            <p>Трудно ли тебе держаться на одном уровне знаний со всем классом?</p>
+            <input type="radio" name="q1" value="1"> Да<br>
+            <input type="radio" name="q1" value="0"> Нет<br>
+    </div>
+    <div id="question2">
+        <h2>Вопрос:</h2>
+        <p>Волнуешься ли ты, когда учитель говорит, что собирается проверить, насколько ты знаешь материал?</p>
+        <input type="radio" name="q2" value="1"> Да<br>
+        <input type="radio" name="q2" value="0"> Нет<br>
+</div>
+<div id="question3">
+    <h2>Вопрос:</h2>
+    <p>Трудно ли тебе работать в классе так, как этого хочет учитель?</p>
+    <input type="radio" name="q3" value="1"> Да<br>
+    <input type="radio" name="q3" value="0"> Нет<br>
+</div>
+<div id="question4">
+    <h2>Вопрос:</h2>
+    <p>Снится ли тебе временами, что учитель в ярости от того, что ты не знаешь урок?</p>
+    <input type="radio" name="q4" value="1"> Да<br>
+    <input type="radio" name="q4" value="0"> Нет<br>
+</div>
+<div id="question5">
+    <h2>Вопрос:</h2>
+    <p>Случалось ли, что кто-нибудь из твоего класса бил или ударял тебя?</p>
+    <input type="radio" name="q5" value="1"> Да<br>
+    <input type="radio" name="q5" value="0"> Нет<br>
+</div>   
+    <div id="question6">
+        <h2>Вопрос:</h2>
+        <p>Часто ли тебе хочется, чтобы учитель не торопился при объяснении нового материала, пока ты не поймешь, что он говорит?</p>
+        <input type="radio" name="q6" value="1"> Да<br>
+        <input type="radio" name="q6" value="0"> Нет<br>
+    </div>
+    <div id="question7">
+        <h2>Вопрос:</h2>
+        <p>Сильно ли ты волнуешься при ответе или выполнении задания?</p>
+        <input type="radio" name="q7" value="1"> Да<br>
+        <input type="radio" name="q7" value="0"> Нет<br>
+    </div>
+    <div id="question8">
+        <h2>Вопрос:</h2>
+        <p>Случается ли с тобой, что ты опасаешься высказываться на уроке, потому что боишься сделать глупую ошибку?</p>
+        <input type="radio" name="q8" value="1"> Да<br>
+        <input type="radio" name="q8" value="0"> Нет<br>
+    </div>
+    <div id="question9">
+        <h2>Вопрос:</h2>
+        <p>Дрожат ли у тебя колени, когда тебя вызывают отвечать?</p>
+        <input type="radio" name="q9" value="1"> Да<br>
+        <input type="radio" name="q9" value="0"> Нет<br>
+    </div>
+    <div id="question10">
+        <h2>Вопрос:</h2>
+        <p>Часто ли твои одноклассники смеются над тобой, когда вы играете в разные игры?</p>
+        <input type="radio" name="q10" value="1"> Да<br>
+        <input type="radio" name="q10" value="0"> Нет<br>
+    </div>
+    <div id="question11">
+        <h2>Вопрос:</h2>
+        <p>Случается ли, что тебе ставят более низкую оценку, чем ты ожидал?</p>
+        <input type="radio" name="q11" value="1"> Да<br>
+        <input type="radio" name="q11" value="0"> Нет<br>
+    </div>
+    <div id="question12">
+        <h2>Вопрос:</h2>
+        <p>Волнует ли тебя вопрос о том, не оставят ли тебя на второй год?</p>
+        <input type="radio" name="q12" value="1"> Да<br>
+        <input type="radio" name="q12" value="0"> Нет<br>
+    </div>
+    <div id="question13">
+        <h2>Вопрос:</h2>
+        <p>Стараешься ли ты избегать игр, в которых делается выбор, потому что тебя, как правило, не выбирают?</p>
+        <input type="radio" name="q13" value="1"> Да<br>
+        <input type="radio" name="q13" value="0"> Нет<br>
+    </div>
+    <div id="question14">
+        <h2>Вопрос:</h2>
+        <p>Бывает ли временами, что ты весь дрожишь, когда тебя вызывают отвечать?</p>
+        <input type="radio" name="q14" value="1"> Да<br>
+        <input type="radio" name="q14" value="0"> Нет<br>
+    </div>
+    <div id="question15">
+        <h2>Вопрос:</h2>
+        <p>Часто ли у тебя возникает ощущение, что никто из твоих одноклассников не хочет делать то, что хочешь ты?</p>
+        <input type="radio" name="q15" value="1"> Да<br>
+        <input type="radio" name="q15" value="0"> Нет<br>
+    </div>
+    <div id="question16">
+        <h2>Вопрос:</h2>
+        <p>Сильно ли ты волнуешься перед тем как начать выполнять задание?</p>
+        <input type="radio" name="q16" value="1"> Да<br>
+        <input type="radio" name="q16" value="0"> Нет<br>
+    </div>
+    <div id="question17">
+        <h2>Вопрос:</h2>
+        <p>Трудно ли тебе получать такие отметки, каких ждут от тебя родители?</p>
+        <input type="radio" name="q17" value="1"> Да<br>
+        <input type="radio" name="q17" value="0"> Нет<br>
+    </div>
+    <div id="question18">
+        <h2>Вопрос:</h2>
+        <p>Боишься ли ты временами, что тебе станет дурно в классе?</p>
+        <input type="radio" name="q18" value="1"> Да<br>
+        <input type="radio" name="q18" value="0"> Нет<br>
+    </div>
+    <div id="question19">
+        <h2>Вопрос:</h2>
+        <p>Будут ли твои одноклассники смеяться над тобой, если ты сделаешь ошибку при ответе?</p>
+        <input type="radio" name="q19" value="1"> Да<br>
+        <input type="radio" name="q19" value="0"> Нет<br>
+    </div>
+    <div id="question20">
+        <h2>Вопрос:</h2>
+        <p>Похож ли ты на своих одноклассников?</p>
+        <input type="radio" name="q20" value="1"> Да<br>
+        <input type="radio" name="q20" value="0"> Нет<br>
+    </div>
+    <div id="question21">
+        <h2>Вопрос:</h2>
+        <p>Выполнив задание, беспокоишься ли ты о том, хорошо ли с ним справился?</p>
+        <input type="radio" name="q21" value="1"> Да<br>
+        <input type="radio" name="q21" value="0"> Нет<br>
+    </div>
+    <div id="question22">
+        <h2>Вопрос:</h2>
+        <p>Когда ты работаешь в классе, уверен ли ты в том, что все хорошо запомнишь?</p>
+        <input type="radio" name="q22" value="1"> Да<br>
+        <input type="radio" name="q22" value="0"> Нет<br>
+    </div>
+    <div id="question23">
+        <h2>Вопрос:</h2>
+        <p>Снится ли тебе иногда, что ты в школе и не можешь ответить на вопрос учителя?</p>
+        <input type="radio" name="q23" value="1"> Да<br>
+        <input type="radio" name="q23" value="0"> Нет<br>
+    </div>
+    <div id="question24">
+        <h2>Вопрос:</h2>
+        <p>Верно ли, что большинство ребят относится к тебе по-дружески?</p>
+        <input type="radio" name="q24" value="1"> Да<br>
+        <input type="radio" name="q24" value="0"> Нет<br>
+    </div>
+    <div id="question25">
+        <h2>Вопрос:</h2>
+        <p>Работаешь ли ты более усердно, если знаешь, что результаты твоей работы будут сравниваться в классе с результатами твоих одноклассников?</p>
+        <input type="radio" name="q25" value="1"> Да<br>
+        <input type="radio" name="q25" value="0"> Нет<br>
+    </div>
+    <div id="question26">
+        <h2>Вопрос:</h2>
+        <p>Часто ли мечтаешь о том, чтобы поменьше волноваться, когда тебя спрашивают?</p>
+        <input type="radio" name="q26" value="1"> Да<br>
+        <input type="radio" name="q26" value="0"> Нет<br>
+    </div>
+    <div id="question27">
+        <h2>Вопрос:</h2>
+        <p>Боишься ли ты временами вступать в спор?</p>
+        <input type="radio" name="q27" value="1"> Да<br>
+        <input type="radio" name="q27" value="0"> Нет<br>
+    </div>
+    <div id="question28">
+        <h2>Вопрос:</h2>
+        <p>Чувствуешь ли ты, что твое сердце начинает сильно биться, когда учитель говорит, что собирается проверить твою готовность к уроку?</p>
+        <input type="radio" name="q28" value="1"> Да<br>
+        <input type="radio" name="q28" value="0"> Нет<br>
+    </div>
+    <div id="question29">
+        <h2>Вопрос:</h2>
+        <p>Когда ты получаешь хорошие отметки, думает ли кто-нибудь из твоих друзей, что ты хочешь выслужиться?</p>
+        <input type="radio" name="q29" value="1"> Да<br>
+        <input type="radio" name="q29" value="0"> Нет<br>
+    </div>
+    <div id="question30">
+        <h2>Вопрос:</h2>
+        <p>Хорошо ли ты себя чувствуешь с теми из твоих одноклассников, к которым ребята относятся с особым вниманием?</p>
+        <input type="radio" name="q30" value="1"> Да<br>
+        <input type="radio" name="q30" value="0"> Нет<br>
+    </div>
+    <div id="question31">
+        <h2>Вопрос:</h2>
+        <p>Бывает ли, что некоторые ребята в классе говорят что-то, что тебя задевает?</p>
+        <input type="radio" name="q31" value="1"> Да<br>
+        <input type="radio" name="q31" value="0"> Нет<br>
+    </div>
+    <div id="question32">
+        <h2>Вопрос:</h2>
+        <p>Как ты думаешь, теряют ли расположение остальные ученики, которые не справляются с учебой?</p>
+        <input type="radio" name="q32" value="1"> Да<br>
+        <input type="radio" name="q32" value="0"> Нет<br>
+    </div>
+    <div id="question33">
+        <h2>Вопрос:</h2>
+        <p>Похоже ли на то, что большинство твоих одноклассников не обращают на тебя внимания?</p>
+        <input type="radio" name="q33" value="1"> Да<br>
+        <input type="radio" name="q33" value="0"> Нет<br>
+    </div>
+    <div id="question34">
+        <h2>Вопрос:</h2>
+        <p>Часто ли ты боишься выглядеть нелепо?</p>
+        <input type="radio" name="q34" value="1"> Да<br>
+        <input type="radio" name="q34" value="0"> Нет<br>
+    </div>
+    <div id="question35">
+        <h2>Вопрос:</h2>
+        <p>Доволен ли ты тем, как к тебе относятся учителя?</p>
+        <input type="radio" name="q35" value="1"> Да<br>
+        <input type="radio" name="q35" value="0"> Нет<br>
+    </div>
+    <div id="question36">
+        <h2>Вопрос:</h2>
+        <p>Помогает ли твоя мама в организации вечеров, как другие мамы твоих одноклассников?</p>
+        <input type="radio" name="q36" value="1"> Да<br>
+        <input type="radio" name="q36" value="0"> Нет<br>
+    </div>
+    <div id="question37">
+        <h2>Вопрос:</h2>
+        <p>Волновало ли тебя когда-нибудь, что думают о тебе окружающие?</p>
+        <input type="radio" name="q37" value="1"> Да<br>
+        <input type="radio" name="q37" value="0"> Нет<br>
+    </div>
+    <div id="question38">
+        <h2>Вопрос:</h2>
+        <p>Надеешься ли ты в будущем учиться лучше, чем раньше?</p>
+        <input type="radio" name="q38" value="1"> Да<br>
+        <input type="radio" name="q38" value="0"> Нет<br>
+    </div>
+    <div id="question39">
+        <h2>Вопрос:</h2>
+        <p>Считаешь ли ты, что одеваешься в школу так же хорошо, как и твои одноклассники?</p>
+        <input type="radio" name="q39" value="1"> Да<br>
+        <input type="radio" name="q39" value="0"> Нет<br>
+    </div>
+    <div id="question40">
+        <h2>Вопрос:</h2>
+        <p>Часто ли, отвечая на уроке, ты задумываешься о том, что думают о тебе в это время другие?</p>
+        <input type="radio" name="q40" value="1"> Да<br>
+        <input type="radio" name="q40" value="0"> Нет<br>
+    </div>
+    <div id="question41">
+        <h2>Вопрос:</h2>
+        <p>Обладают ли способные ученики какими-то особыми правами, которых нет у других ребят в классе?</p>
+        <input type="radio" name="q41" value="1"> Да<br>
+        <input type="radio" name="q41" value="0"> Нет<br>
+    </div>
+    <div id="question42">
+        <h2>Вопрос:</h2>
+        <p>Злятся ли некоторые из твоих одноклассников, когда тебе удается быть лучше их?</p>
+        <input type="radio" name="q42" value="1"> Да<br>
+        <input type="radio" name="q42" value="0"> Нет<br>
+    </div>
+    <div id="question43">
+        <h2>Вопрос:</h2>
+        <p>Доволен ли ты тем, как к тебе относятся одноклассники?</p>
+        <input type="radio" name="q43" value="1"> Да<br>
+        <input type="radio" name="q43" value="0"> Нет<br>
+    </div>
+    <div id="question44">
+        <h2>Вопрос:</h2>
+        <p>Хорошо ли ты себя чувствуешь, когда остаешься один на один с учителем?</p>
+        <input type="radio" name="q44" value="1"> Да<br>
+        <input type="radio" name="q44" value="0"> Нет<br>
+    </div>
+    <div id="question45">
+        <h2>Вопрос:</h2>
+        <p>Высмеивают ли временами одноклассники твою внешность и поведение?</p>
+        <input type="radio" name="q45" value="1"> Да<br>
+        <input type="radio" name="q45" value="0"> Нет<br>
+    </div>
+    <div id="question46">
+        <h2>Вопрос:</h2>
+        <p>Думаешь ли ты, что беспокоишься о своих школьных делах больше, чем другие ребята?</p>
+        <input type="radio" name="q46" value="1"> Да<br>
+        <input type="radio" name="q46" value="0"> Нет<br>
+    </div>
+    <div id="question47">
+        <h2>Вопрос:</h2>
+        <p>Если ты не можешь ответить, когда тебя спрашивают, чувствуешь ли ты, что вот-вот расплачешься?</p>
+        <input type="radio" name="q47" value="1"> Да<br>
+        <input type="radio" name="q47" value="0"> Нет<br>
+    </div>
+    <div id="question48">
+        <h2>Вопрос:</h2>
+        <p>Когда вечером ты лежишь в постели, думаешь ли ты временами с беспокойством о том, что будет завтра в школе?</p>
+        <input type="radio" name="q48" value="1"> Да<br>
+        <input type="radio" name="q48" value="0"> Нет<br>
+    </div>
+    <div id="question49">
+        <h2>Вопрос:</h2>
+        <p>Работая над трудным заданием, чувствуешь ли ты порой, что совершенно забыл вещи, которые хорошо знал раньше?</p>
+        <input type="radio" name="q49" value="1"> Да<br>
+        <input type="radio" name="q49" value="0"> Нет<br>
+    </div>
+    <div id="question50">
+        <h2>Вопрос:</h2>
+        <p>Дрожит ли слегка твоя рука, когда ты работаешь над заданием?</p>
+        <input type="radio" name="q50" value="1"> Да<br>
+        <input type="radio" name="q50" value="0"> Нет<br>
+    </div>
+    <div id="question51">
+        <h2>Вопрос:</h2>
+        <p>Чувствуешь ли ты, что начинаешь нервничать, когда учитель говорит, что собирается дать классу задание?</p>
+        <input type="radio" name="q51" value="1"> Да<br>
+        <input type="radio" name="q51" value="0"> Нет<br>
+    </div>
+    <div id="question52">
+        <h2>Вопрос:</h2>
+        <p>Пугает ли тебя проверка твоих знаний в школе?</p>
+        <input type="radio" name="q52" value="1"> Да<br>
+        <input type="radio" name="q52" value="0"> Нет<br>
+    </div>
+    <div id="question53">
+        <h2>Вопрос:</h2>
+        <p>Когда учитель говорит, что собирается дать классу задание, чувствуешь ли ты страх, что не справишься с ним?</p>
+        <input type="radio" name="q53" value="1"> Да<br>
+        <input type="radio" name="q53" value="0"> Нет<br>
+    </div>
+    <div id="question54">
+        <h2>Вопрос:</h2>
+        <p>Снилось ли тебе временами, что ты не можешь справиться с заданием или тестом в школе?</p>
+        <input type="radio" name="q54" value="1"> Да<br>
+        <input type="radio" name="q54" value="0"> Нет<br>
+    </div>
+    <div id="question55">
+        <h2>Вопрос:</h2>
+        <p>Часто ли ты испытываешь страх, когда учитель объявляет, что будет проводить проверку знаний?</p>
+        <input type="radio" name="q55" value="1"> Да<br>
+        <input type="radio" name="q55" value="0"> Нет<br>
+    </div>
+    <div id="question56">
+        <h2>Вопрос:</h2>
+        <p>Дрожат ли у тебя колени, когда ты стоишь перед классом?</p>
+        <input type="radio" name="q56" value="1"> Да<br>
+        <input type="radio" name="q56" value="0"> Нет<br>
+    </div>
+    <div id="question57">
+        <h2>Вопрос:</h2>
+        <p>Сжимается ли у тебя сердце, когда учитель приглашает тебя ответить на вопрос перед всем классом?</p>
+        <input type="radio" name="q57" value="1"> Да<br>
+        <input type="radio" name="q57" value="0"> Нет<br>
+    </div>
+    <div id="question58">
+        <h2>Вопрос:</h2>
+        <p>Ощущаешь ли ты, что у тебя пересыхает во рту, когда ты должен говорить перед всем классом?</p>
+        <input type="radio" name="q58" value="1"> Да<br>
+        <input type="radio" name="q58" value="0"> Нет<br>
+    </div>
+
+    <script>
+        var currentQuestion = 1;
+        var score = 0;
+        function createNavigationButtons() {
+    var questions = document.querySelectorAll("#questions > div");
+    
+    for (var i = 0; i < questions.length; i++) {
+        var questionNum = i + 1;
+        var backButton = document.createElement("button");
+        backButton.textContent = "Назад";
+        backButton.setAttribute("onclick", "previousQuestion()");
+        questions[i].appendChild(backButton);
+
+        var nextButton = document.createElement("button");
+        nextButton.textContent = "Вперед";
+        nextButton.setAttribute("onclick", "nextQuestion()");
+        questions[i].appendChild(nextButton);
+    }
+}
+
+        function showQuestion(questionNum) {
+            var questionDivs = document.querySelectorAll("#questions > div");
+            for (var i = 0; i < questionDivs.length; i++) {
+                questionDivs[i].style.display = "none";
+            }
+            document.getElementById("question" + questionNum).style.display = "block";
+            currentQuestion = questionNum;
+        }
+    
+        function previousQuestion() {
+            if (currentQuestion > 1) {
+                showQuestion(currentQuestion - 1);
+            }
+        }
+    
+        var resultButtonCreated = false;
+
+        function nextQuestion() {
+        var currentQuestionDiv = document.getElementById("question" + currentQuestion);
+        var selectedAnswer = currentQuestionDiv.querySelector('input[name="q' + currentQuestion + '"]:checked');
+
+        if (selectedAnswer) {
+            if (currentQuestion < 58) {
+            showQuestion(currentQuestion + 1);
+            }
+            if (currentQuestion == 58 && !resultButtonCreated) {
+            showResultButton();
+            resultButtonCreated = true;
+            }
+        } else {
+            alert("Пожалуйста, выберите ответ перед переходом к следующему вопросу.");
+        }
+}
+
+function startTest() {
+  document.getElementById("start").style.display = "none";
+  document.getElementById("questions").style.display = "block";
+  showQuestion(1);
+  createNavigationButtons();
+}
+
+var yesCount = 0;
+var totalCount = 0;
+
+function calculateAnxiety() {
+  var yesPercentage = (yesCount / totalCount) * 100;
+  var mismatchPercentage = 100 - yesPercentage;
+
+  var resultText = "";
+
+  if (yesPercentage > 75) {
+    resultText = "Результат: Высокая школьная тревожность";
+  } else if (mismatchPercentage > 50) {
+    resultText = "Результат: Повышенная школьная тревожность";
+  } else {
+    resultText = "Результат: Умеренная школьная тревожность";
+  }
+  alert(resultText);
+  var csvContent = "data:text/csv;charset=utf-8," + resultText;
+  var encodedUri = encodeURI(csvContent);
+  var link = document.createElement("a");
+  link.setAttribute("href", encodedUri);
+  link.setAttribute("download", "results.csv");
+  link.innerHTML = "Скачать результаты";
+  document.body.appendChild(link);
+}
+
+function buttonClick(answer) {
+  if (answer === "1") {
+    yesCount++;
+  }
+  totalCount++;
+}
+
+function submitTest() {
+  calculateAnxiety();
+  var resultButton = document.getElementById("resultButton");
+  resultButton.style.display = "none";
+}
+
+function showResultButton() {
+  var resultButton = document.createElement("button");
+  resultButton.textContent = "Показать результаты";
+  resultButton.setAttribute("onclick", "submitTest()");
+  resultButton.setAttribute("id", "resultButton");
+  document.body.appendChild(resultButton);
+}
+var test = new Test();
+</script>
+</body>
+</html>

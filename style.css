@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Discet;
+    src: url("srd.otf");
+}
+body{
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: Discet;
+    background-color: rgba(119, 178, 128, 0.886);
+}
+#questions {
+    display: none;
+}
+#start{
+    background-color: rgba(70, 122, 77, 0.766);
+    border-radius: 30px;
+    padding: 20px;
+}
+#start button{
+    width: 100px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.766);
+    font-size: large;
+    color: rgba(70, 122, 77, 0.766);
+}
+#start button:hover{
+    background-color: rgba(0, 0, 0, 0.747);
+}
+#questions p{
+    background-color: rgba(70, 122, 77, 0.766);
+    border-radius: 30px;
+    padding: 20px;
+}
+#questions input{
+    width: 20px;
+    height: 20px;
+}
+#questions button{
+    margin: 20px;
+    width: 100px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.766);
+    font-size: large;
+    color: rgba(70, 122, 77, 0.766);
+}
+#questions button:hover{
+    background-color: rgba(0, 0, 0, 0.766);
+}
+#resultButton{
+    margin: 20px;
+    width: 130px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.766);
+    font-size: large;
+    color: rgba(70, 122, 77, 0.766);
+}
+#resultButton:hover{
+    background-color: rgba(0, 0, 0, 0.766);
+}
+link{
+    text-decoration:none;
+    color: rgba(70, 122, 77, 0.766);
+}
